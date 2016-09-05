@@ -3,15 +3,23 @@
   "version": "1.0.0",
   "description": "Helper for http based services in Angular2",
   "scripts": {
-    "postinstall": "typings install",
+    "tsc": "tsc -p tsconfig.json",
     "typings": "typings"
   },
   "keywords": [],
   "author": "Ryan Paulsen",
   "license": "ISC",
   "dependencies": {
+    "@angular/common": "2.0.0-rc.5",
+    "@angular/compiler": "2.0.0-rc.5",
     "@angular/http": "2.0.0-rc.5",
+    "@angular/core": "2.0.0-rc.5",
+    "@angular/platform-browser": "2.0.0-rc.5",
     "rxjs": "5.0.0-beta.6",
+    "zone.js": "^0.6.12"
+  },
+  "devDependencies": {
+    "typescript": "^1.8.10",
     "typings": "^1.0.4"
   }
 }
