@@ -1,6 +1,6 @@
 {
   "name": "angular2-http-service",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Helper for http based services in Angular2",
   "scripts": {
     "tsc": "tsc -p tsconfig.json",

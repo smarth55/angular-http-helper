@@ -11,7 +11,7 @@ export abstract class HttpBaseService {
 		return `${fName}:${argsString}`;
 	}
 
-	public clearCache(key) {
+	public clearCache(key?: string): void {
 		if ( key ) {
 			this.cache = this.cache.filter(item => item.id !== key);
 		} else {
@@ -43,7 +43,7 @@ export function HttpRequest(options?: {cache?: boolean}) {
 			}
 
 			if ( !this.requests[requestKey] ) {
-				this.requests[requestKey] = originalFunction.bind(this).call(args).publish().refCount();
+				this.requests[requestKey] = originalFunction.call(this, ...args).publish().refCount();
 			}
 
 			this.requests[requestKey].subscribe((res)=>{
