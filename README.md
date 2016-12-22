@@ -1,4 +1,4 @@
-# angular2-http-service
+# angular-http-helper
 This is a base service and decorator to provide some basic functionality to an http-based service. By decorating your service methods, multiple calls with the same parameters are merged until the first request is returned and cached (if set to cache). This is useful if you have multiple components that need the same data when they are initialized.
 
 If cache is set to true, data from the request will be stored and additional requests with the same parameters are pulled from the stored results.

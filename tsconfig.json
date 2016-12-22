@@ -1,23 +1,27 @@
 {
   "compilerOptions": {
-    "target": "ES5",
-    "module": "commonjs",
+    "target": "es5",
+    "module": "es2015",
     "moduleResolution": "node",
     "sourceMap": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "removeComments": false,
     "noImplicitAny": false,
-    "outDir": "../angular2-http-service.npm",
+    "outDir": "../angular-http-helper.npm",
     "rootDir": ".",
-    "sourceMap": true,
-    "inlineSources": true
+    "inlineSources": true,
+    "declaration": true
   },
   "files": [
-    "index.ts",
-    "./typings/index.d.ts"
+    "index.ts"
   ],
   "exclude": [
     "node_modules"
-  ]
+  ],
+  "angularCompilerOptions": {
+    "genDir": "_temp",
+    "skipTemplateCodegen": true,
+    "debug": true
+  }
 }

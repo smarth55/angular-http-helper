@@ -1,25 +1,30 @@
 {
-  "name": "angular2-http-service",
-  "version": "1.0.1",
-  "description": "Helper for http based services in Angular2",
+  "name": "angular-http-helper",
+  "version": "1.1.0",
+  "description": "Helper for http based services in Angular 2+",
   "scripts": {
-    "tsc": "tsc -p tsconfig.json",
-    "typings": "typings"
+    "build": "ngc -p tsconfig.json"
   },
   "keywords": [],
   "author": "Ryan Paulsen",
   "license": "ISC",
   "dependencies": {
-    "@angular/common": "2.0.0-rc.5",
-    "@angular/compiler": "2.0.0-rc.5",
-    "@angular/http": "2.0.0-rc.5",
-    "@angular/core": "2.0.0-rc.5",
-    "@angular/platform-browser": "2.0.0-rc.5",
-    "rxjs": "5.0.0-beta.6",
-    "zone.js": "^0.6.12"
+    "@types/core-js": "^0.9.35"
   },
   "devDependencies": {
-    "typescript": "^1.8.10",
-    "typings": "^1.0.4"
+    "@angular/common": "~2.3.0",
+    "@angular/compiler": "~2.3.0",
+    "@angular/compiler-cli": "~2.3.0",
+    "@angular/core": "~2.3.0",
+    "@angular/http": "~2.3.0",
+    "@angular/platform-browser": "~2.3.0",
+    "@angular/platform-server": "~2.3.0",
+    "rxjs": "5.0.0-rc.4",
+    "typescript": "~2.0.10",
+    "zone.js": "^0.7.2"
+  },
+  "peerDependencies": {
+    "@angular/http": "~2.3.0",
+    "rxjs": "5.0.0-rc.4"
   }
 }
